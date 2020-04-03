@@ -3,17 +3,11 @@ const client = new Discord.Client();
 const config = require('./config.json');
 const ytdl = require('ytdl-core');
 const streamOptions = {seek: 0, volume: 1};
-let cu = false;
 
 client.login(config.token);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  if (cu == true) 
-  {   
-  console.log('vai toma no cu');
-
-  }
 
 });
 
